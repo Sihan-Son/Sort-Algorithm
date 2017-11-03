@@ -1,20 +1,20 @@
-def swap(arr,i,j) :
+def swap(array, i, j) :
 
-    temp = arr[i]
-    arr[i] = arr[j]
-    arr[j] = temp
+    temp = array[i]
+    array[i] = array[j]
+    array[j] = temp
 
 def Partiton(array, left, right) :
-    x = array[right]
-    i = left-1
+    end = array[right]
+    start = left-1
 
     for j in range(left, right) :
-        if array[j] <= x :
-            i+=1
-            swap(array,i,j)
+        if array[j] <= end :
+            start+=1
+            swap(array,start,j)
 
-    swap(array,i+1,right)
-    return (i+1)
+    swap(array,start+1,right)
+    return (start+1)
 
 def quicksort(array, count) :
     startIndex = 0
@@ -53,4 +53,3 @@ print(list)
 quicksort(list, len(list))
 
 print(list)
-

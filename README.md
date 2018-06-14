@@ -12,3 +12,6 @@ Sort Implement LIST
 
 ## C
 1. Quick Sort
+2. Bubble Sort
+3. Insertion Sort
+4. Selection Sort
